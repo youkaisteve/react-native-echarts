@@ -4,5 +4,6 @@ export default function toString(obj) {
       return `~--demo--~${val}~--demo--~`;
     }
     return val;
-  }).replace('\"~--demo--~', '').replace('~--demo--~\"', '').replace(/\\n/g, '');
+  }).replace('\"~--demo--~', '').replace('~--demo--~\"', '')
+      //.replace(/\\n/g, '');
 }
